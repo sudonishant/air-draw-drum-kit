@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #030712;
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Glow & AR styles */
+.neon-glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.6), inset 0 0 10px rgba(6, 182, 212, 0.4);
+}
+
+.neon-glow-pink {
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.6), inset 0 0 10px rgba(236, 72, 153, 0.4);
+}
+
+.neon-glow-green {
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.6), inset 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+.neon-glow-gold {
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.6), inset 0 0 10px rgba(234, 179, 8, 0.3);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(6, 182, 212, 0.7);
+}
+
+.hud-grid {
+  background-image: 
+    linear-gradient(rgba(14, 165, 233, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s ease-in-out infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
